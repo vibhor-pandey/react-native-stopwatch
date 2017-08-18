@@ -51,12 +51,12 @@ class Main extends Component {
                     </View>
 
                     <View style={[styles.buttonContainer]}>
-                        <RoundButton title={this.state.isRunning?"Stop":  "Start"} onPress={() => { this.state.isRunning ? this.stopTimer() : this.startTimer() }} />
-                        <RoundButton title="Lap" onPress={() => {this.onHandleLapPress()}}/>
+                        <RoundButton title={this.state.isRunning?"STOP":  "START"} onPress={() => { this.state.isRunning ? this.stopTimer() : this.startTimer() }} />
+                        <RoundButton title="LAP" onPress={() => {this.onHandleLapPress()}}/>
                     </View>
                 </View>
 
-                <ScrollView 
+                <ScrollView
                 showsVerticalScrollIndicator={false}
                 style={[styles.bottomContainer]}
                 >
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
         flex: 0.5,
         flexDirection: 'column',
         justifyContent: 'center',
-        backgroundColor: "#FFCFBC"
+        backgroundColor: "#FFF"
     },
 
     timeContainer: {
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
 
     bottomContainer: {
         flex: 0.5,
-        backgroundColor: "#ABB2B9",
+        backgroundColor: "#EEE",
     }
 });
 
